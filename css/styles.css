@@ -201,9 +201,12 @@ nav ul a:hover {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.social-icons img[alt="GitHub"] {
+/* Keep the GitHub icon visible on dark backgrounds */
+.social-icons img[alt="GitHub"],
+.contact-social-icons img[alt="GitHub"] {
     filter: brightness(0) invert(1);
 }
+
 
 .social-icons img:hover {
     transform: translateY(-3px);
@@ -367,9 +370,7 @@ nav ul a:hover {
 .project-card small {
     color: #77898d;
 }
-/* ========================================
-   CONTACT
-======================================== */
+/*CONTACT */
 
 #contact {
     color: white;
@@ -561,7 +562,9 @@ body.light-mode .contact-info > p:not(.label) {
     color: var(--muted);
 }
 
-body.light-mode .social-icons img[alt="GitHub"] {
+/* Restore the original GitHub icon color in light mode */
+body.light-mode .social-icons img[alt="GitHub"],
+body.light-mode .contact-social-icons img[alt="GitHub"] {
     filter: none;
 }
 
