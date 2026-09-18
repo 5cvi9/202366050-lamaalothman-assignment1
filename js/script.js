@@ -16,3 +16,55 @@ form.addEventListener("submit", function (event) {
    
     form.reset();
 });
+
+// DARK / LIGHT MODE
+
+
+const themeToggle = document.getElementById("theme-toggle");
+const savedTheme = localStorage.getItem("portfolio-theme");
+
+
+if (savedTheme === "light") {
+    document.body.classList.add("light-mode");
+}
+
+
+// Update the theme button icon and accessibility label
+function updateThemeButton() {
+
+    if (document.body.classList.contains("light-mode")) {
+
+        themeToggle.textContent = "☾︎";
+
+        themeToggle.setAttribute(
+            "aria-label",
+            "Switch to dark mode"
+        );
+
+    } else {
+
+        themeToggle.textContent = "☀︎";
+
+        themeToggle.setAttribute(
+            "aria-label",
+            "Switch to light mode"
+        );
+    }
+}
+
+updateThemeButton();
+
+
+// Change the theme when the button is clicked
+themeToggle.addEventListener("click", function () {
+
+    document.body.classList.toggle("light-mode");
+
+    if (document.body.classList.contains("light-mode")) {
+        localStorage.setItem("portfolio-theme", "light");
+    } else {
+        localStorage.setItem("portfolio-theme", "dark");
+    }
+
+    updateThemeButton();
+});
