@@ -1,0 +1,179 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navy: #172b36;
+    --dark-navy: #10232c;
+    --teal: #315f68;
+    --green: #365f56;
+    --accent: #8fc1b5;
+
+    --background: #f3f6f4;
+    --surface: #ffffff;
+    --text: #1d343b;
+    --muted: #60747a;
+    --border: #d8e2df;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: var(--background);
+    line-height: 1.6;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+.label {
+    margin-bottom: 8px;
+    color: var(--teal);
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* NAVIGATION*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom: 1px solid var(--border);
+}
+
+nav {
+    max-width: 1150px;
+    margin: auto;
+    padding: 16px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--teal);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: var(--green);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    list-style: none;
+}
+
+nav ul a {
+    display: block;
+    padding: 8px 13px;
+
+    color: var(--muted);
+    border-radius: 6px;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+nav ul a:hover {
+    color: var(--teal);
+    background: rgba(143, 193, 181, 0.12);
+}
+
+
+/* HOME */
+
+#home {
+    min-height: 82vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at 85% 20%, #315f68, transparent 42%),
+        radial-gradient(circle at 15% 80%, #365f56, transparent 40%),
+        var(--navy);
+}
+
+.hero {
+    max-width: 700px;
+    text-align: center;
+}
+
+#home .label {
+    color: var(--accent);
+}
+
+.hero h1 {
+    margin-bottom: 8px;
+    color: white;
+    font-size: 4rem;
+}
+
+.hero h2 {
+    margin-bottom: 15px;
+    color: #a7d2c9;
+    font-size: 1.4rem;
+}
+
+.hero > p:not(.label) {
+    color: #d5e1df;
+}
+
+
+/* SOCIAL ICONS */
+
+.social-icons {
+    margin-top: 22px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+
+    object-fit: contain;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icons img[alt="GitHub"] {
+    filter: brightness(0) invert(1);
+}
+
+.social-icons img:hover {
+    transform: translateY(-3px);
+    opacity: 0.7;
+}
