@@ -91,7 +91,7 @@ Several accessibility practices are included in the website:
 
 ## Performance and Maintainability
 
-The portfolio uses vanilla HTML, CSS, and JavaScript without external frameworks or libraries. This keeps the project lightweight and avoids unnecessary dependencies.
+The portfolio is built using HTML, CSS, and JavaScript without external frameworks or libraries. This keeps the project lightweight and avoids unnecessary dependencies.
 
 The code is separated into HTML, CSS, and JavaScript files, and comments are used to identify important sections. Shared CSS variables and reusable classes also reduce repeated styling.
 
