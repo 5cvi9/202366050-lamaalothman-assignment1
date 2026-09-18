@@ -56,4 +56,4 @@ No additional installation or dependencies are required.
 
 ChatGPT was used during the development process for code review, explanations, UI suggestions, and documentation support. AI suggestions were reviewed, tested, and modified when needed before being included in the project.
 
-More details about the use of AI are provided in `docs/ai-usage-report.md`.
+For more information about the implementation, see the [Technical Documentation](docs/technical-documentation.md).
