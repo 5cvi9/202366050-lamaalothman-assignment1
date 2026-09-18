@@ -335,3 +335,160 @@ nav ul a:hover {
 .project-card small {
     color: #77898d;
 }
+/* ========================================
+   CONTACT
+======================================== */
+
+#contact {
+    color: white;
+
+    background:
+        radial-gradient(circle at 10% 80%, #315f56, transparent 35%),
+        var(--navy);
+}
+
+.contact-container {
+    max-width: 950px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 60px;
+
+    align-items: center;
+}
+
+#contact .label {
+    color: var(--accent);
+}
+
+.contact-info h2 {
+    margin-bottom: 12px;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.contact-info > p:not(.label) {
+    margin-bottom: 18px;
+    color: #c6d5d3;
+}
+
+.email {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.email:hover {
+    color: var(--accent);
+}
+
+
+/* Contact Social Icons */
+
+.contact-social-icons {
+    margin-top: 22px;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.contact-social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-social-icons img {
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contact-social-icons img:hover {
+    transform: translateY(-3px);
+    opacity: 0.7;
+}
+
+
+/* CONTACT FORM */
+
+form {
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    color: var(--text);
+    background: #f9fbfa;
+
+    border: 1px solid #dce6e3;
+    border-radius: 8px;
+
+    box-shadow: 0 12px 30px rgba(7, 22, 29, 0.15);
+}
+
+form label {
+    color: var(--navy);
+    font-weight: 600;
+}
+
+form input,
+form textarea {
+    margin-bottom: 7px;
+    padding: 10px;
+
+    color: var(--text);
+    background: white;
+
+    border: 1px solid #cedbd8;
+    border-radius: 4px;
+
+    font: inherit;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 2px solid var(--accent);
+    border-color: transparent;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    padding: 11px;
+
+    color: white;
+    background: var(--teal);
+
+    border: none;
+    border-radius: 4px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: var(--green);
+}
+
+#form-message {
+    color: var(--green);
+    text-align: center;
+}
+
+
+/*  FOOTER */
+
+footer {
+    padding: 18px;
+    color: #b7c8c5;
+    background: var(--dark-navy);
+    text-align: center;
+}
